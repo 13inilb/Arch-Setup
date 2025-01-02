@@ -52,6 +52,29 @@ to reload config do
 ```bash
 source ~/.zshrc
 ```
+## ghostty
+Edit the ghostty config file
+```bash
+nano ~/.config/ghostty/config
+```
+add the following instructions
+```bash
+theme=Nocturnal Winter
+title = " "
+mouse-hide-while-typing
+```
+## starship
+add the following to shell config
+```bash
+eval "$(starship init zsh)"
+```
+set up starship config
+```bash
+#create starship config file
+mkdir -p ~/.config && touch ~/.config/starship.toml
+```
+download the [starship config](Presets/starship.toml) and move the file
+```bash
+mv starship.toml ~/.config/starship.toml
 
-
-
+```
