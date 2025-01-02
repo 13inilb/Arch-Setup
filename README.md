@@ -32,5 +32,26 @@ install zgenom
 ```bash
 git clone https://github.com/jandamm/zgenom.git "${HOME}/.zgenom"
 ```
+make a .zshrc file in home directory and copy the following
+```bash
+# Initialize Zgenom
+source "${HOME}/.zgenom/zgenom.zsh"
+
+# Load plugins
+zgenom load zsh-users/zsh-syntax-highlighting
+zgenom load zsh-users/zsh-autosuggestions
+zgenom load zsh-users/zsh-completions
+
+# Save the configuration
+if ! zgenom saved; then
+    zgenom reset
+    zgenom save
+fi
+```
+to reload config do 
+```bash
+source ~/.zshrc
+```
+
 
 
