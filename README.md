@@ -14,6 +14,7 @@ additionally to create the pkglist.txt file, use :
 sudo pacman -Qqe > pkglist.txt
 ```
 ## Terminal Setup
+### zsh
 check for zsh 
 ```bash
 zsh --version
@@ -26,5 +27,6 @@ logout for changes to take place and confirm current shell using
 ```bash
 echo $SHELL
 ```
+### OhMyZsh
 
 
