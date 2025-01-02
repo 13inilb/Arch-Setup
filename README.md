@@ -27,6 +27,10 @@ logout for changes to take place and confirm current shell using
 ```bash
 echo $SHELL
 ```
-### OhMyZsh
+### zgenom
+install zgenom 
+```bash
+git clone https://github.com/jandamm/zgenom.git "${HOME}/.zgenom"
+```
 
 
