@@ -127,6 +127,7 @@ move the file to `~/.config/nvim/colors/`
 then append the nvim config file `init.lua` 
 ```sh
 vim.opt.termguicolors = true
+#here we are using nocturnal-winter.lua color scheme
 vim.cmd([[colorscheme nocturnal-winter]])
 ```
  </details>
