@@ -116,12 +116,26 @@ function y() {
 ```
 </details>
 
-## Neovim Setup
+### Neovim Setup
 
+ <details>
+	 <summary>Color Scheme</summary>
+
+### Set ColorSchem
+download any color scheme available in [nvim](ColorScheme/nvim)
+move the file to `~/.config/nvim/colors/`
+then append the nvim config file `init.lua` 
+```sh
+vim.opt.termguicolors = true
+vim.cmd([[colorscheme nocturnal-winter]])
+```
+ </details>
+ 
 <details>
 	<summary>lazy.nvim</summary>
 
  ### lazy.nvim Setup
+
 
  configure the ` ~/.config/nvim/init.lua ` with the code
  ```sh
