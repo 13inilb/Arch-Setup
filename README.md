@@ -83,7 +83,7 @@ download the [starship config](Presets/starship.toml) and move the file
 mv starship.toml ~/.config/starship.toml
 ```
 ## yazi
-setup yazi shell wrapp to switch directories
+setup yazi shell wrapp to switch directories.
 copy paste this in shell config file
 ```bash
 function y() {
