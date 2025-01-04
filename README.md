@@ -81,5 +81,16 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 download the [starship config](Presets/starship.toml) and move the file
 ```bash
 mv starship.toml ~/.config/starship.toml
-
+```
+## yazi
+setup yazi shell wrapp to switch directories
+copy paste this in shell config file
+```bash
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
 ```
