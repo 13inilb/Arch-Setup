@@ -175,6 +175,7 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 ```
+### Telescope Plugin for Neovim
 configure `~/cofig/nvim/lua/plugin/telescope.lua`
 ```sh
 return {
