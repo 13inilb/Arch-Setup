@@ -52,7 +52,7 @@ to reload config do
 ```bash
 source ~/.zshrc
 ```
-## ghostty
+### ghostty
 Edit the ghostty config file
 ```bash
 nano ~/.config/ghostty/config
@@ -68,7 +68,7 @@ font-family = "Fira Code"
 #font-family = "MesloLGM Nerd Font"
 #window-padding-x = 2
 ```
-## starship
+### starship
 add the following to shell config
 ```bash
 eval "$(starship init zsh)"
@@ -82,7 +82,7 @@ download the [starship config](Presets/starship.toml) and move the file
 ```bash
 mv starship.toml ~/.config/starship.toml
 ```
-## yazi
+### yazi
 setup yazi shell wrapp to switch directories.
 copy paste this in shell config file
 ```bash
