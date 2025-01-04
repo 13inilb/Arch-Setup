@@ -161,11 +161,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -179,5 +174,26 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+```
+configure `~/cofig/nvim/lua/plugin/telescope.lua`
+```sh
+return {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+        local telescope = require('telescope')
+        telescope.setup({
+            defaults = {
+                prompt_prefix = "> ",
+                selection_caret = "> ",
+                path_display = { "smart" },
+            },                                                                                         })
+    end,                                                                                           keys = {
+        { '<leader>ff', function() require('telescope.builtin').find_files() end, desc = "Find Files" },
+        { '<leader>fg', function() require('telescope.builtin').live_grep() end, desc = "Live Grep" },
+        { '<leader>fb', function() require('telescope.builtin').buffers() end, desc = "List Buffers" },
+        { '<leader>fh', function() require('telescope.builtin').help_tags() end, desc = "Help Tags" },
+    }
+}
 ```
 </details>
