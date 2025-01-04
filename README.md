@@ -116,7 +116,7 @@ function y() {
 ```
 </details>
 
-### Neovim Setup
+## Neovim Setup
 
  <details>
 	 <summary>Color Scheme</summary>
