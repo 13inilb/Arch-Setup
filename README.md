@@ -60,8 +60,13 @@ nano ~/.config/ghostty/config
 add the following instructions
 ```bash
 theme=Nocturnal Winter
-title = " "
+title = "*"
 mouse-hide-while-typing
+
+#font-family = "Hack Nerd Font"
+font-family = "Fira Code"
+#font-family = "MesloLGM Nerd Font"
+#window-padding-x = 2
 ```
 ## starship
 add the following to shell config
