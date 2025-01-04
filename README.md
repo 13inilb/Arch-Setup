@@ -13,21 +13,29 @@ additionally to create the pkglist.txt file, use :
 ```bash
 sudo pacman -Qqe > pkglist.txt
 ```
+
 ## Terminal Setup
-### zsh
+<details><summary> zsh</summary>
+
+### zsh Setup
 check for zsh 
-```bash
+```sh
 zsh --version
 ```
 enable the installed zsh
-```bash
+```sh
 chsh -s /usr/bin/zsh
 ```
 logout for changes to take place and confirm current shell using
-```bash
+```sh
 echo $SHELL
 ```
-### zgenom
+</details>
+
+
+<details><summary>zgenom</summary>
+
+### zgenom Setup
 install zgenom 
 ```bash
 git clone https://github.com/jandamm/zgenom.git "${HOME}/.zgenom"
@@ -52,7 +60,11 @@ to reload config do
 ```bash
 source ~/.zshrc
 ```
-### ghostty
+</details>
+
+<details><summary>ghostty</summary>
+	
+### ghostty Setup
 Edit the ghostty config file
 ```bash
 nano ~/.config/ghostty/config
@@ -68,7 +80,11 @@ font-family = "Fira Code"
 #font-family = "MesloLGM Nerd Font"
 #window-padding-x = 2
 ```
-### starship
+</details>
+
+<details><summary>starship</summary>
+
+### starship Setup
 add the following to shell config
 ```bash
 eval "$(starship init zsh)"
@@ -82,6 +98,10 @@ download the [starship config](Presets/starship.toml) and move the file
 ```bash
 mv starship.toml ~/.config/starship.toml
 ```
+</details>
+
+<details><summary>yazi</summary>
+	
 ### yazi
 setup yazi shell wrapp to switch directories.
 copy paste this in shell config file
@@ -94,3 +114,4 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 ```
+</details>
