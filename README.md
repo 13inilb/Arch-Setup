@@ -137,9 +137,9 @@ vim.cmd([[colorscheme nocturnal-winter]])
 
  ### lazy.nvim Setup
 
-
  configure the ` ~/.config/nvim/init.lua ` with the code
  ```sh
+vim.g.mapleader = " "
 require("config.lazy")
 ```
 next configure the `~/cofig/nvim/lua/config/lazy.lua` with the code
