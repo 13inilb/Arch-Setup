@@ -28,7 +28,7 @@ local colors = {
 
 vim.cmd("highlight clear")
 vim.opt.background = "dark"
-vim.g.colors_name = "nocturnal-winter"
+vim.g.colors_name = "NocturnalWinter"
 
 
 local function highlight(group, fg, bg, attr)
