@@ -1,5 +1,5 @@
 ﻿-- Nocturnal Winter color scheme for Neovim
--- Save this file as ~/.config/nvim/colors/nocturnal-winter.lua
+-- Save this file as ~/.config/nvim/colors/Nocturnal_Winter.lua
 
 
 local colors = {
