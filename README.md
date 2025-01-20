@@ -92,7 +92,7 @@ eval "$(starship init zsh)"
 set up starship config
 ```bash
 #create starship config file
-mkdir -p ~/.config && touch ~/.config/starship.toml
+touch ~/.config/starship.toml
 ```
 download the [starship config](Presets/starship.toml) and move the file
 ```bash
